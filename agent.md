@@ -33,17 +33,12 @@ documented before implementation proceeds.
 ## Coding Standards
 
 ### File Structure
-Place code in appropriate modules:
-- `src/model.py` — GPT architecture
-- `src/data.py` — data loading/tokenization
-- `src/optimizers/{adamw,muon,aurora}.py` — optimizer implementations
-- `src/train.py`, `src/eval.py` — loops
-- `src/diagnostics.py` — row norm, dead neuron tracking
-- `src/plotting.py` — visualization helpers
-- `notebooks/0X_*.ipynb` — experiments
+The entire project must be contained within a single Jupyter Notebook (`notebooks/Ablation_Study.ipynb`).
+- Do NOT create a modular `src/` folder structure.
+- Model architecture, data loading, custom optimizers, training loops, and plotting must all exist as discrete cells within this single notebook.
 
 ### Documentation Requirements
-Every module must include:
+Every major section of the notebook must include:
 1. Module-level docstring explaining purpose and references
 2. Math explanations in comments or adjacent markdown
 3. Assumptions and limitations noted

@@ -123,30 +123,9 @@ optimizer-comparison/
 ├── README.md
 ├── plan.md                 # this file
 ├── agent.md                # coding rules and constraints
-├── notebooks/
-│   ├── 00_setup.ipynb          # environment + smoke test
-│   ├── 01_adamw_baseline.ipynb # AdamW baseline
-│   ├── 02_muon.ipynb           # Muon integration
-│   ├── 03_aurora.ipynb         # Aurora + diagnostics
-│   └── 04_analysis.ipynb       # aggregation + plots
-├── src/
-│   ├── model.py
-│   ├── data.py
-│   ├── train.py
-│   ├── eval.py
-│   ├── diagnostics.py
-│   ├── plotting.py
-│   └── optimizers/
-│       ├── adamw.py
-│       ├── muon.py
-│       └── aurora.py
-├── configs/
-│   ├── adamw.yaml
-│   ├── muon.yaml
-│   └── aurora.yaml
-└── docs/
-    ├── experiment_report.md
-    └── results_summary.md
+├── requirements.txt        # python dependencies
+└── notebooks/
+    └── Ablation_Study.ipynb # SINGLE file containing everything (model, data, optimizers, training)
 ```
 
 ## 9. Experimental Phases
